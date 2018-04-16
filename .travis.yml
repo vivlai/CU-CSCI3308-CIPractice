@@ -2,3 +2,4 @@ language: c
 compiler: clang
 before_install:
   - test -n $CC && unset CC
+script: ./configure && make && make test
